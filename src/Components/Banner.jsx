@@ -38,9 +38,10 @@ const FadeDiv = styled.div`
 `;
 
 const H1 = styled.h1`
+  font-family: "Josefin Sans", sans-serif;
   margin: 0.5rem;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   @media (max-width: 1280px) {
     font-size: 1.25rem;
