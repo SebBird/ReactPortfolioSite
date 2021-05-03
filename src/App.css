@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(0, 0, 0, 1);
   font-family: "Montserrat", sans-serif;
@@ -10,7 +14,7 @@ body {
 }
 
 @media (max-width: 425px) {
-  navbar {
+  nav {
     display: flex;
     flex-direction: column;
   }
