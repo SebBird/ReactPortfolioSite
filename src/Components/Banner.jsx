@@ -27,16 +27,22 @@ const MainBanner = styled.div`
 `;
 
 const TextContainer = styled.div`
-  margin: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75%;
+  margin: 4rem;
   z-index: 999;
   @media (max-width: 1280px) {
-    margin: 0;
+    margin: 2rem;
   }
   @media (max-width: 1024px) {
     margin: 8rem;
   }
   @media (max-width: 768px) {
-    margin: 2rem;
+    justify-content: flex-start;
+    margin: 2rem 0;
   }
 `;
 
@@ -53,12 +59,20 @@ const FadeDiv = styled.div`
 
 const H1 = styled.h1`
   font-family: "Josefin Sans", sans-serif;
-  margin: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 400;
+  margin: 1rem;
+  text-shadow: 0 0 5px rgb(39, 39, 39);
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
   text-align: center;
   @media (max-width: 1280px) {
-    font-size: 1.25rem;
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
 
@@ -66,14 +80,9 @@ const Banner = () => {
   return (
     <MainBanner>
       <TextContainer>
-        <Textbox
-          content={
-            <div>
-              <H1>Hi there, I'm Seb!</H1>
-              <H1>I am a front end web developer.</H1>
-            </div>
-          }
-        />
+        <H1>Hi there, I'm Seb!</H1>
+        <H1>I am a front end web developer.</H1>
+
         <Textbox
           id="aboutme"
           content={

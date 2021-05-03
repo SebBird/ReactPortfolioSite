@@ -13,6 +13,7 @@ const Arrow = styled.div`
 `;
 
 const Image = styled.img`
+  user-select: none;
   width: 80px;
   @media (max-width: 1280px) {
     width: 50px;
@@ -22,7 +23,9 @@ const Image = styled.img`
 const FadeArrow = () => {
   return (
     <Arrow>
-      <Image src={scrollarrow} alt="" />
+      <a href="#projects">
+        <Image src={scrollarrow} alt="" />
+      </a>
     </Arrow>
   );
 };
