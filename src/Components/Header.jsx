@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import cv from "../Assets/CV.pdf";
+import logo from "../Assets/headerlogo.png";
 
 const MainHeader = styled.header`
   background-color: rgba(53, 43, 43, 1);
@@ -16,6 +17,15 @@ const MainHeader = styled.header`
   }
   @media (max-width: 425px) {
     padding: 0 1rem;
+  }
+`;
+
+const LogoImage = styled.img`
+  height: 50px;
+  padding: 10px;
+  transition: filter 0.35s;
+  &:hover {
+    filter: brightness(2);
   }
 `;
 
@@ -52,7 +62,10 @@ const MenuButton = styled.p`
   @media (max-width: 425px) {
     font-weight: 800;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background: #2a2020;
+    border-radius: 8px;
     display: block;
     height: 100%;
   }
@@ -71,7 +84,9 @@ const Header = () => {
     mobileHidden && window.innerWidth < 426 ? "mobileHide" : "";
   return (
     <MainHeader id="headerbar">
-      <Links href="#headerbar">Sebastian Bird</Links>
+      <a href="#headerbar">
+        <LogoImage src={logo} alt="" />
+      </a>
       <nav className={classes}>
         <Links href="#aboutme">About Me</Links>
         <Links href="#projects">Projects</Links>
