@@ -41,8 +41,8 @@ const Card = styled.div`
 const Links = styled.a`
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.5rem;
   transition: 0.25s;
   &:hover {
     font-weight: 800;
@@ -50,14 +50,14 @@ const Links = styled.a`
   }
 
   @media (max-width: 425px) {
+    font-weight: 800;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
   }
 `;
 
 const Projects = ({ projects }) => {
   return (
-    <Container>
+    <Container id="projects">
       <h2>Projects</h2>
       <ProjectGrid>
         {projects.map((project) => {

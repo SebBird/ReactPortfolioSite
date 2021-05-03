@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import cv from "../Assets/CV.pdf";
 
 const MainHeader = styled.header`
   background-color: rgba(53, 43, 43, 1);
@@ -8,6 +9,7 @@ const MainHeader = styled.header`
   align-items: center;
   padding: 0 5rem;
   z-index: 999;
+  font-size: 1.25rem;
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
@@ -18,7 +20,6 @@ const MainHeader = styled.header`
 `;
 
 const Links = styled.a`
-  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   padding: 1.5rem 2rem;
@@ -32,7 +33,7 @@ const Links = styled.a`
 
   @media (max-width: 425px) {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
 `;
 
@@ -68,14 +69,15 @@ const Header = () => {
   let classes = "";
   classes = classes +=
     mobileHidden && window.innerWidth < 426 ? "mobileHide" : "";
-  console.log(classes);
   return (
     <MainHeader id="headerbar">
       <Links href="#headerbar">Sebastian Bird</Links>
       <nav className={classes}>
-        <Links href="">About Me</Links>
-        <Links href="">Projects</Links>
-        <Links href="">Resume</Links>
+        <Links href="#aboutme">About Me</Links>
+        <Links href="#projects">Projects</Links>
+        <Links href={cv} target="_blank">
+          Resume
+        </Links>
       </nav>
       <MenuButton onClick={handleHidden}>Menu</MenuButton>
     </MainHeader>
