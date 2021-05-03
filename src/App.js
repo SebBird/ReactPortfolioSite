@@ -5,7 +5,7 @@ import Banner from "./Components/Banner";
 import Projects from "./Components/Projects";
 
 function App() {
-  const [projects, updateProjects] = useState([
+  const [projects] = useState([
     {
       name: "React Grid Game",
       description:

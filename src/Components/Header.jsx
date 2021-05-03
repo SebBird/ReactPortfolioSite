@@ -72,11 +72,11 @@ const Header = () => {
   return (
     <MainHeader id="headerbar">
       <Links href="#headerbar">Sebastian Bird</Links>
-      <navbar className={classes}>
+      <nav className={classes}>
         <Links href="">About Me</Links>
         <Links href="">Projects</Links>
         <Links href="">Resume</Links>
-      </navbar>
+      </nav>
       <MenuButton onClick={handleHidden}>Menu</MenuButton>
     </MainHeader>
   );
