@@ -27,14 +27,26 @@ const Footer = () => {
     <MainFooter>
       <p>Built with React</p>
       <div>
-        <a href="">
-          <SocialImage src={linkedin} alt="" />
+        <a
+          href="https://www.linkedin.com/in/sebastian-bird-824b4218a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialImage src={linkedin} alt="LinkedIn" />
         </a>
-        <a href="https://github.com/SebBird" target="_blank">
+        <a
+          href="https://github.com/SebBird"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <SocialImage src={github} alt="GitHub" />
         </a>
-        <a href="">
-          <SocialImage src={instagram} alt="" />
+        <a
+          href="https://www.instagram.com/sebbird/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SocialImage src={instagram} alt="Instagram" />
         </a>
       </div>
     </MainFooter>
