@@ -12,10 +12,13 @@ const MainHeader = styled.header`
   z-index: 999;
   font-size: 1.25rem;
   @media (max-width: 768px) {
-    flex-direction: column;
     text-align: center;
   }
   @media (max-width: 425px) {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
     padding: 0 1rem;
   }
 `;
@@ -26,6 +29,8 @@ const LogoImage = styled.img`
   transition: filter 0.35s;
   &:hover {
     filter: brightness(2);
+  }
+  @media (max-width: 425px) {
   }
 `;
 
@@ -67,7 +72,9 @@ const MenuButton = styled.p`
     background: #2a2020;
     border-radius: 8px;
     display: block;
-    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    width: fit-content;
   }
 `;
 
