@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import FadeArrow from "./FadeArrow";
 
 const Container = styled.div`
   color: white;
   text-align: center;
-  margin: 4rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin: 5rem 0 10rem 0;
 `;
 
 const ProjectGrid = styled.div`
@@ -17,6 +18,7 @@ const ProjectGrid = styled.div`
   justify-items: center;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  margin: 0 0 40px;
   @media (max-width: 1280px) {
     width: 75%;
   }

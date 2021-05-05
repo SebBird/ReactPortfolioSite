@@ -38,7 +38,7 @@ const TextContainer = styled.div`
     margin: 2rem;
   }
   @media (max-width: 1024px) {
-    margin: 8rem;
+    margin: 6rem;
   }
   @media (max-width: 768px) {
     justify-content: flex-start;
@@ -103,7 +103,7 @@ const Banner = () => {
           }
         />
       </TextContainer>
-      <FadeArrow />
+      <FadeArrow reference={"#aboutme"} />
       <FadeDiv></FadeDiv>
     </MainBanner>
   );

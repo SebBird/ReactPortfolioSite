@@ -4,6 +4,7 @@ import importProjects from "./Modules/projects.js";
 import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Projects from "./Components/Projects";
+import AboutMe from "./Components/AboutMe";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header />
       <Banner />
+      <AboutMe />
       <Projects projects={projects} />
       <Footer />
     </>

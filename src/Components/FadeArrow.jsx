@@ -4,8 +4,8 @@ import scrollarrow from "../Assets/scrollarrow.png";
 
 const Arrow = styled.div`
   z-index: 999;
-  position: absolute;
-  bottom: 30px;
+  position: relative;
+  bottom: 0px;
   opacity: 0.3;
   @media (max-width: 768px) {
     opacity: 0;
@@ -20,10 +20,10 @@ const Image = styled.img`
   }
 `;
 
-const FadeArrow = () => {
+const FadeArrow = ({ reference }) => {
   return (
     <Arrow>
-      <a href="#projects">
+      <a href={reference}>
         <Image src={scrollarrow} alt="" />
       </a>
     </Arrow>
