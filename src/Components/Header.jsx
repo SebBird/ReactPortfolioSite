@@ -30,8 +30,6 @@ const LogoImage = styled.img`
   &:hover {
     filter: brightness(2);
   }
-  @media (max-width: 425px) {
-  }
 `;
 
 const Links = styled.a`
@@ -46,7 +44,7 @@ const Links = styled.a`
     background-color: rgb(104, 84, 84);
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
   }
@@ -64,7 +62,7 @@ const MenuButton = styled.p`
     background-color: rgb(104, 84, 84);
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     font-weight: 800;
     font-size: 1rem;
     margin: 0.2rem;
@@ -88,7 +86,7 @@ const Header = () => {
 
   let classes = "";
   classes = classes +=
-    mobileHidden && window.innerWidth < 426 ? "mobileHide" : "";
+    mobileHidden && window.innerWidth < 769 ? "mobileHide" : "";
   return (
     <MainHeader id="headerbar">
       <a href="#headerbar">
@@ -98,7 +96,7 @@ const Header = () => {
         <Links href="#aboutme">About Me</Links>
         <Links href="#projects">Projects</Links>
         <Links href={cv} target="_blank">
-          Resume
+          CV
         </Links>
       </nav>
       <MenuButton onClick={handleHidden}>Menu</MenuButton>

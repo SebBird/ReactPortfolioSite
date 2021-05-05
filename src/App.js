@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Projects from "./Components/Projects";
 import AboutMe from "./Components/AboutMe";
+import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Banner />
       <AboutMe />
       <Projects projects={projects} />
+      <Contact />
       <Footer />
     </>
   );

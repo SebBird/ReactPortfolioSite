@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 5rem 0 10rem 0;
+  margin: 5rem 0 5rem 0;
 `;
 
 const ProjectGrid = styled.div`
