@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 4rem 0;
 `;
 
 const Intro = styled.section`
