@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import FadeArrow from "./FadeArrow";
 
 const Container = styled.div`
   color: white;
