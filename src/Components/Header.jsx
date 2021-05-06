@@ -95,6 +95,7 @@ const Header = () => {
       <nav className={classes}>
         <Links href="#aboutme">About Me</Links>
         <Links href="#projects">Projects</Links>
+        <Links href="#contactme">Contact Me</Links>
         <Links href={cv} target="_blank">
           CV
         </Links>

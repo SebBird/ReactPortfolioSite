@@ -86,7 +86,7 @@ const Contact = () => {
       );
   }
   return (
-    <Formbox>
+    <Formbox id="contactme">
       <h2>Contact Me</h2>
       <Mainform className="contact-form" onSubmit={sendForm}>
         <StyledLabel htmlFor="subjectname">Name</StyledLabel>

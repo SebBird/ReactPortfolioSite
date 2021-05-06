@@ -1,4 +1,4 @@
-const projects = [
+const projectList = [
   {
     name: "React Grid Game",
     description:
@@ -29,8 +29,4 @@ const projects = [
   },
 ];
 
-const importProjects = () => {
-  return projects;
-};
-
-export default importProjects;
+export default projectList;
