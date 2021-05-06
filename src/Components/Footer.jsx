@@ -19,6 +19,7 @@ const SocialImage = styled.img`
   transition: 0.5s;
   &:hover {
     filter: invert(1);
+    transform: scale(1.25);
   }
 `;
 
