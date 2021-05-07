@@ -10,6 +10,10 @@ const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 4rem 0;
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 0;
+  }
 `;
 
 const Intro = styled.section`
@@ -43,14 +47,13 @@ const MyPic = styled.img`
 const TextDiv = styled.div`
   width: 30%;
   padding-left: 5rem;
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   @media (max-width: 768px) {
     width: 70%;
-    padding: 0;
+    padding: 2rem 0;
   }
 `;
 
@@ -69,7 +72,7 @@ const AboutMe = () => {
           </p>
           <p>
             Since then, I decided to move in the complete opposite direction and
-            begun my endless journey into the world of programming and
+            began my endless journey into the world of programming and
             web-development.
           </p>
           <p>Oops.</p>

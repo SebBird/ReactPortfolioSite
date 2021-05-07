@@ -88,19 +88,20 @@ const Contact = () => {
   return (
     <Formbox id="contactme">
       <h2>Contact Me</h2>
+      <p>Fields marked with &#42; are required.</p>
       <Mainform className="contact-form" onSubmit={sendForm}>
-        <StyledLabel htmlFor="subjectname">Name</StyledLabel>
+        <StyledLabel htmlFor="subjectname">Name &#42;</StyledLabel>
         <StyledInput id="subjectname" type="text" name="from_name" required />
-        <StyledLabel htmlFor="subjectemail">Email</StyledLabel>
+        <StyledLabel htmlFor="subjectemail">Email &#42;</StyledLabel>
         <StyledInput
           id="subjectemail"
           type="email"
           name="from_email"
           required
         />
-        <StyledLabel htmlFor="emailsubject">Subject</StyledLabel>
+        <StyledLabel htmlFor="emailsubject">Subject (Optional)</StyledLabel>
         <StyledInput id="emailsubject" type="text" name="subject" />
-        <StyledLabel htmlFor="subjectmessage">Message</StyledLabel>
+        <StyledLabel htmlFor="subjectmessage">Message &#42;</StyledLabel>
         <StyledText id="subjectmessage" name="message" required />
         <StyledButton type="submit" value="Send" />
       </Mainform>

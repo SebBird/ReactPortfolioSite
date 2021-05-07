@@ -79,14 +79,13 @@ const MenuButton = styled.p`
 const Header = () => {
   const [mobileHidden, updateMobileHidden] = useState(true);
 
-  const handleHidden = () => {
-    let newMobileMenu = !mobileHidden;
-    updateMobileHidden(newMobileMenu);
-  };
+  const handleHidden = () =>
+    updateMobileHidden((currentHidden) => !currentHidden);
 
   let classes = "";
   classes = classes +=
     mobileHidden && window.innerWidth < 769 ? "mobileHide" : "";
+
   return (
     <MainHeader id="headerbar">
       <a href="#headerbar">
