@@ -61,20 +61,18 @@ const Projects = ({ projects }) => {
     <Container id="projects">
       <h2>Projects</h2>
       <ProjectGrid>
-        {projects.map((project) => {
-          return (
-            <Card key={project.name}>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <Links href={project.link} target="_blank">
-                Demo
-              </Links>
-              <Links href={project.github} target="_blank">
-                Github
-              </Links>
-            </Card>
-          );
-        })}
+        {projects.map(({ name, description, link, github }) => (
+          <Card key={name}>
+            <h3>{name}</h3>
+            <p>{description}</p>
+            <Links href={link} target="_blank">
+              Demo
+            </Links>
+            <Links href={github} target="_blank">
+              Github
+            </Links>
+          </Card>
+        ))}
       </ProjectGrid>
     </Container>
   );
