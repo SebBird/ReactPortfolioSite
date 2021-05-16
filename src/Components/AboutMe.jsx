@@ -27,26 +27,35 @@ const Intro = styled.section`
 `;
 const Skills = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 6rem 0;
+`;
+
+const SkillList = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 768px) {
+    align-items: flex-start;
     flex-direction: column;
   }
 `;
 
 const MyPic = styled.img`
   border-radius: 20px;
+  margin-right: 5rem;
   box-shadow: 0 0 10px 5px rgb(39, 39, 39);
   @media (max-width: 768px) {
+    margin-right: 0rem;
     width: 70%;
   }
 `;
 
 const TextDiv = styled.div`
   width: 30%;
-  padding-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +87,33 @@ const AboutMe = () => {
           <p>Oops.</p>
         </TextDiv>
       </Intro>
-      <Skills></Skills>
+      <Skills>
+        <h3>Skill set:</h3>
+        <SkillList>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>jQuery</li>
+            <li>Git</li>
+          </ul>
+          <ul>
+            <li>JSON</li>
+            <li>JSX</li>
+            <li>AJAX/API calls</li>
+            <li>Responsive Design</li>
+            <li>Bootstrap v5.0</li>
+            <li>Object-Orientated Programming</li>
+          </ul>
+          <ul>
+            <li>Blender</li>
+            <li>Adobe PhotoShop</li>
+            <li>C#</li>
+            <li>.NET Framework</li>
+          </ul>
+        </SkillList>
+      </Skills>
       <FadeArrow reference={"#projects"} />
     </Container>
   );
