@@ -33,10 +33,15 @@ const Card = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 20rem;
+  height: fit-content;
   margin: 2rem;
   padding: 15px;
   background-color: rgba(53, 43, 43, 1);
   border-radius: 5px;
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    height: auto;
+  }
 `;
 
 const Links = styled.a`

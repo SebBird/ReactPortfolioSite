@@ -98,6 +98,7 @@ const Banner = () => {
                 <li>JavaScript</li>
                 <li>React</li>
                 <li>Git</li>
+                <li>Cypress</li>
               </ul>
             </div>
           }
