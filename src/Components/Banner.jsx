@@ -87,10 +87,6 @@ const Banner = () => {
           id="aboutme"
           content={
             <div>
-              <p>
-                I am currently searching for a challenging junior position with
-                an exciting employer.
-              </p>
               <p>I am proficient in many areas, most notably:</p>
               <ul>
                 <li>HTML</li>
