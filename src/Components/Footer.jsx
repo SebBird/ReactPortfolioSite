@@ -1,10 +1,24 @@
 import React from "react";
+import Frog from "./Frog";
 import styled from "styled-components";
 import linkedin from "../Assets/linkedin.png";
 import github from "../Assets/github.png";
 import instagram from "../Assets/instagram.png";
 
+const HiddenFrog = styled.span`
+filter: opacity(0.2);
+position: relative;
+top: 70px;
+transition: 0.8s;
+&:hover{
+  filter: opacity(1);
+  top: 0;
+}
+`;
+
 const MainFooter = styled.footer`
+position: relative;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +39,8 @@ const SocialImage = styled.img`
 
 const Footer = () => {
   return (
+    <>
+      <HiddenFrog><Frog/></HiddenFrog>
     <MainFooter>
       <p>Built with React</p>
       <div>
@@ -51,6 +67,7 @@ const Footer = () => {
         </a>
       </div>
     </MainFooter>
+    </>
   );
 };
 
