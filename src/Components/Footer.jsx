@@ -6,18 +6,19 @@ import github from "../Assets/github.png";
 import instagram from "../Assets/instagram.png";
 
 const HiddenFrog = styled.span`
-filter: opacity(0.2);
-position: relative;
-top: 70px;
-transition: 0.8s;
-&:hover{
-  filter: opacity(1);
-  top: 0;
-}
+  filter: opacity(0.2);
+  position: relative;
+  top: 70px;
+  transition: 0.8s;
+  &:hover {
+    filter: opacity(1);
+    top: 0;
+  }
+  max-width: 10%;
 `;
 
 const MainFooter = styled.footer`
-position: relative;
+  position: relative;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -40,33 +41,35 @@ const SocialImage = styled.img`
 const Footer = () => {
   return (
     <>
-      <HiddenFrog><Frog/></HiddenFrog>
-    <MainFooter>
-      <p>Built with React</p>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/sebastian-bird-824b4218a"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialImage src={linkedin} alt="LinkedIn" />
-        </a>
-        <a
-          href="https://github.com/SebBird"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialImage src={github} alt="GitHub" />
-        </a>
-        <a
-          href="https://www.instagram.com/sebbird/?hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialImage src={instagram} alt="Instagram" />
-        </a>
-      </div>
-    </MainFooter>
+      <HiddenFrog>
+        <Frog />
+      </HiddenFrog>
+      <MainFooter>
+        <p>Built with React</p>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/sebastian-bird-824b4218a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialImage src={linkedin} alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/SebBird"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialImage src={github} alt="GitHub" />
+          </a>
+          <a
+            href="https://www.instagram.com/sebbird/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SocialImage src={instagram} alt="Instagram" />
+          </a>
+        </div>
+      </MainFooter>
     </>
   );
 };
