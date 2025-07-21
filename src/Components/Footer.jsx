@@ -6,15 +6,14 @@ import github from "../Assets/github.png";
 import instagram from "../Assets/instagram.png";
 
 const HiddenFrog = styled.span`
-  filter: opacity(0.2);
+  filter: opacity(0.05);
   position: relative;
-  top: 70px;
+  top: 5vw;
   transition: 0.8s;
   &:hover {
     filter: opacity(1);
     top: 0;
   }
-  max-width: 10%;
 `;
 
 const MainFooter = styled.footer`
